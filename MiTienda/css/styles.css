@@ -6,26 +6,26 @@
   --cream: #fff1da;
   --white: #ffffff;
 }
-
+ 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
 body {
   font-family: "Poppins", sans-serif;
   color: var(--text);
   background: var(--white);
   line-height: 1.6;
 }
-
+ 
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
-
+ 
 .container {
   width: min(1100px, 90%);
   margin-inline: auto;
 }
-
-
+ 
+/* ---------- NAVBAR ---------- */
 .navbar {
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 2;
 }
-
+ 
 .logo {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -42,7 +42,7 @@ img { max-width: 100%; display: block; }
   color: #000;
   letter-spacing: -1px;
 }
-
+ 
 .nav-links {
   display: flex;
   align-items: center;
@@ -51,24 +51,24 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
   color: var(--navy);
 }
-
+ 
 .nav-links a:hover { color: var(--coral); }
-
+ 
 .btn-signup {
   border: 1px solid var(--navy);
   border-radius: 4px;
   padding: 6px 18px;
 }
-
+ 
 .btn-signup:hover { background: var(--navy); color: var(--white) !important; }
-
-/* /////// HERO ////// */
+ 
+/* ---------- HERO ---------- */
 .hero {
   position: relative;
   overflow: hidden;
 }
-
-
+ 
+/* Forma crema de fondo (derecha) */
 .hero::before {
   content: "";
   position: absolute;
@@ -80,7 +80,7 @@ img { max-width: 100%; display: block; }
   border-bottom-left-radius: 100% 45%;
   z-index: 0;
 }
-
+ 
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -90,7 +90,7 @@ img { max-width: 100%; display: block; }
   min-height: 560px;
   gap: 20px;
 }
-
+ 
 .hero-eyebrow {
   color: var(--coral);
   font-weight: 700;
@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-
+ 
 .hero h1 {
   font-family: "Volkhov", serif;
   font-size: clamp(2.6rem, 5vw, 4.4rem);
@@ -107,12 +107,12 @@ img { max-width: 100%; display: block; }
   color: var(--navy);
   margin-bottom: 26px;
 }
-
+ 
 .hero h1 .underline {
   position: relative;
   display: inline-block;
 }
-
+ 
 .hero h1 .underline::after {
   content: "";
   position: absolute;
@@ -125,19 +125,19 @@ img { max-width: 100%; display: block; }
   border-radius: 4px;
   z-index: -1;
 }
-
+ 
 .hero p {
   max-width: 400px;
   font-size: 0.95rem;
   margin-bottom: 36px;
 }
-
+ 
 .hero-actions {
   display: flex;
   align-items: center;
   gap: 28px;
 }
-
+ 
 .btn-primary {
   background: var(--orange);
   color: var(--white);
@@ -147,9 +147,9 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 14px 28px rgba(241, 165, 1, 0.35);
   transition: transform 0.2s;
 }
-
+ 
 .btn-primary:hover { transform: translateY(-2px); }
-
+ 
 .play {
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
   font-size: 0.9rem;
 }
-
+ 
 .play-icon {
   width: 56px;
   height: 56px;
@@ -167,7 +167,7 @@ img { max-width: 100%; display: block; }
   place-items: center;
   box-shadow: 0 12px 24px rgba(223, 105, 81, 0.4);
 }
-
+ 
 .play-icon::before {
   content: "";
   border-left: 14px solid var(--white);
@@ -175,19 +175,19 @@ img { max-width: 100%; display: block; }
   border-bottom: 8px solid transparent;
   margin-left: 4px;
 }
-
+ 
 .hero-image img {
   width: 100%;
   max-width: 520px;
   margin-left: auto;
 }
-
-/* ////////// SERVICIOS ////////// */
+ 
+/* ---------- SERVICIOS ---------- */
 .services {
   padding: 90px 0 120px;
   text-align: center;
 }
-
+ 
 .section-eyebrow {
   font-weight: 600;
   font-size: 0.85rem;
@@ -195,32 +195,32 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--text);
 }
-
+ 
 .section-title {
   font-family: "Volkhov", serif;
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   color: var(--navy);
   margin-bottom: 70px;
 }
-
+ 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
-
+ 
 .service-card {
   padding: 36px 20px;
   border-radius: 24px;
   transition: box-shadow 0.25s, background 0.25s;
 }
-
+ 
 .service-card:hover,
 .service-card.active {
   background: var(--white);
   box-shadow: 0 30px 60px rgba(20, 24, 62, 0.1);
 }
-
+ 
 .service-icon {
   width: 64px;
   height: 64px;
@@ -231,26 +231,460 @@ img { max-width: 100%; display: block; }
   background: var(--cream);
   border-radius: 18px;
 }
-
+ 
 .service-card h3 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--navy);
   margin-bottom: 10px;
 }
-
+ 
 .service-card p {
   font-size: 0.85rem;
 }
-
-/* ////////// RESPONSIVE ////////// */
+ 
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .hero-inner { grid-template-columns: 1fr; text-align: left; }
   .hero::before { width: 100%; height: 55%; top: auto; bottom: 0; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
+ 
 @media (max-width: 520px) {
   .services-grid { grid-template-columns: 1fr; }
+}
+ 
+/* ---------- TOP DESTINATIONS ---------- */
+.destinations {
+  padding: 40px 0 120px;
+  text-align: center;
+}
+ 
+.destinations .section-title {
+  margin-bottom: 60px;
+}
+ 
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+ 
+.destination-card {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+ 
+.destination-card:hover {
+  transform: translateY(-6px);
+}
+ 
+.destination-card img {
+    width: 100%;
+    max-width: none;
+    height: 208px;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 24px 24px 0 0;
+}
+ 
+.destination-info {
+    padding: 18px 16px 26px;
+}
+ 
+.destination-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+ 
+.destination-row h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+ 
+.price {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+ 
+.trip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+ 
+.trip svg {
+  color: #000;
+}
+ 
+@media (max-width: 900px) {
+  .destinations-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 520px) {
+  .destinations-grid { grid-template-columns: 1fr; }
+}
+ 
+/* ---------- BOOK YOUR NEXT TRIP ---------- */
+.booking {
+  padding: 60px 0 120px;
+}
+ 
+.booking-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+ 
+.booking-text .section-eyebrow {
+  text-transform: none;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+ 
+.booking-title {
+  font-family: "Volkhov", serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.3;
+  color: var(--navy);
+  margin-bottom: 44px;
+}
+ 
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+ 
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+ 
+.step-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+ 
+.step-icon.yellow { background: var(--orange); }
+.step-icon.orange { background: #f15a2b; }
+.step-icon.teal { background: #006380; }
+ 
+.step h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+ 
+.step p {
+  max-width: 260px;
+  font-size: 0.85rem;
+}
+ 
+/* Tarjeta de viaje */
+.booking-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+ 
+.booking-visual::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(127, 197, 248, 0.35), transparent 70%);
+  z-index: 0;
+}
+ 
+.trip-card {
+  position: relative;
+  z-index: 1;
+  width: 330px;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 16px 16px 22px;
+  box-shadow: 0 30px 60px rgba(20, 24, 62, 0.1);
+}
+ 
+.trip-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+ 
+.trip-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+ 
+.trip-meta {
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+ 
+.trip-meta span { margin: 0 4px; }
+ 
+.trip-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+ 
+.trip-icons span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f1f1f5;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+}
+ 
+.trip-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+ 
+.heart {
+  font-size: 1.3rem;
+  color: #8a79df;
+}
+ 
+/* Tarjeta flotante "Ongoing" */
+.ongoing-card {
+  position: absolute;
+  z-index: 2;
+  right: -10px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 230px;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 20px 40px rgba(20, 24, 62, 0.12);
+}
+ 
+.ongoing-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+.ongoing-label {
+  font-size: 0.7rem;
+}
+ 
+.ongoing-card h4 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+ 
+.progress-label {
+  font-size: 0.7rem;
+  color: var(--navy);
+  margin-top: 4px;
+}
+ 
+.progress-label span { color: #8a79df; }
+ 
+.progress {
+  height: 4px;
+  background: #e9e9ef;
+  border-radius: 4px;
+  margin-top: 4px;
+  width: 150px;
+}
+ 
+.progress-bar {
+  width: 40%;
+  height: 100%;
+  background: #8a79df;
+  border-radius: 4px;
+}
+ 
+@media (max-width: 900px) {
+  .booking-inner { grid-template-columns: 1fr; }
+  .ongoing-card { right: 0; }
+}
+ 
+/* ---------- TESTIMONIALS ---------- */
+.testimonials {
+  padding: 40px 0 120px;
+}
+ 
+.testimonials-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 110px;
+}
+ 
+.eyebrow-upper {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+ 
+.testimonials-text .booking-title {
+  margin-bottom: 70px;
+}
+ 
+.dots {
+  display: flex;
+  gap: 14px;
+}
+ 
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e5e5ea;
+}
+ 
+.dot.active {
+  background: var(--navy);
+}
+ 
+.testimonials-visual {
+  position: relative;
+  min-height: 250px;
+  padding-top: 20px;
+}
+ 
+.review {
+  background: var(--white);
+  border-radius: 10px;
+}
+ 
+.review-front {
+  position: relative;
+  z-index: 2;
+  width: 320px;
+  padding: 32px 22px 24px;
+  margin-left: 0;
+  box-shadow: 0 24px 48px rgba(20, 24, 62, 0.1);
+}
+ 
+.avatar {
+  position: absolute;
+  top: -20px;
+  left: -24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+.quote {
+  font-size: 0.8rem;
+  line-height: 1.9;
+  margin-bottom: 26px;
+}
+ 
+.review-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+ 
+.review-role {
+  font-size: 0.7rem;
+}
+ 
+.review-back {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 30px;
+  width: 320px;
+  height: 148px;
+  padding: 0 22px 14px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid #f0f0f4;
+  box-shadow: 0 10px 30px rgba(20, 24, 62, 0.04);
+}
+ 
+.arrows {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.arrows button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--navy);
+  cursor: pointer;
+}
+ 
+/* Logos de aerolíneas */
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+ 
+.partners img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+ 
+.partners img.featured {
+  height: 62px;
+  padding: 16px 24px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(20, 24, 62, 0.08);
+}
+ 
+@media (max-width: 900px) {
+  .testimonials-inner { grid-template-columns: 1fr; }
+  .review-front, .review-back { width: 100%; max-width: 320px; }
+  .arrows { display: none; }
+  .partners { flex-wrap: wrap; justify-content: center; }
 }
